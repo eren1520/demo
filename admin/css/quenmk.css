@@ -1,0 +1,600 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,body{
+    font-family: 'Open Sans', sans-serif;
+}
+/* HEARDER */
+.header__top{
+    display: flex;
+    justify-content: space-between;
+    background-color:white;
+    color: black;
+    padding: 0 10px;
+}
+
+.header__top img{
+    width: 50px;
+    height: 100%;
+}
+
+.header__top__right{
+    display: flex;
+    align-items: center;
+}
+
+.header__top__right i{
+    height: 25px;
+    width: 25px;
+
+    line-height: 25px;
+    text-align: center;
+    font-size: 14px;
+}
+
+.header__top__right p:first-child{
+    margin-right: 15px;
+}
+
+.header__top__right i:hover{
+    border: 1px solid white;
+    background-color: rgba(201, 23, 23, 0.917);
+    transition: all .5s;
+}
+
+.header__bottom{
+    display: flex;
+    padding: 0 140px;
+    justify-content: space-between;
+    align-items: center;
+    background-color: rgba(39,47,84,1);
+}
+
+.header__bottom__right img{
+    width: 160px;
+    margin: 10px 0px 10px 0;
+
+}
+
+.header__bottom__right a{
+    text-align: center;
+    text-decoration: none;
+    display: flex;
+    align-items: center;
+    text-transform: uppercase;
+    color: black;
+}
+
+
+.header__bottom__left ul li{
+    display: inline-block;
+}
+
+.header__bottom__left a{
+    text-decoration: none;
+    font-size: 16px;
+    color: white;
+    text-transform: uppercase;
+}
+
+.header__bottom__left li{
+    padding: 5px 7px;
+    margin: 0 5px;
+}
+/* 
+dangNhap */
+
+@import url(https://fonts.googleapis.com/css?family=Roboto:300);
+
+.login-page {
+  width: 360px;
+  padding: 8% 0 0;
+  margin: auto;
+}
+.form {
+  position: relative;
+  z-index: 1;
+  background: #FFFFFF;
+  max-width: 360px;
+  margin: 0 auto 100px;
+  padding: 45px;
+  text-align: center;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+.login-page h2{
+    margin-bottom: 10px;
+}
+.form input {
+  font-family: "Roboto", sans-serif;
+  outline: 0;
+  background: #f2f2f2;
+  width: 100%;
+  border: 0;
+  margin: 0 0 15px;
+  padding: 15px;
+  box-sizing: border-box;
+  font-size: 14px;
+}
+.form button {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  outline: 0;
+  background: #192041;
+  width: 100%;
+  border: 0;
+  padding: 15px;
+  color: #FFFFFF;
+  font-size: 14px;
+  -webkit-transition: all 0.3 ease;
+  transition: all 0.3 ease;
+  cursor: pointer;
+}
+.form button:hover,.form button:active,.form button:focus {
+  background: #2c7d30;
+  transition: all .5s;
+}
+.form .message {
+  margin: 15px 0 0;
+  color: #b3b3b3;
+  font-size: 12px;
+}
+.form .message a {
+  color: #4CAF50;
+  text-decoration: none;
+}
+.form .register-form {
+  display: none;
+}
+.container {
+  position: relative;
+  z-index: 1;
+  max-width: 300px;
+  margin: 0 auto;
+}
+.container:before, .container:after {
+  content: "";
+  display: block;
+  clear: both;
+}
+.container .info {
+  margin: 50px auto;
+  text-align: center;
+}
+.container .info h1 {
+  margin: 0 0 15px;
+  padding: 0;
+  font-size: 36px;
+  font-weight: 300;
+  color: #1a1a1a;
+}
+.container .info span {
+  color: #4d4d4d;
+  font-size: 12px;
+}
+.container .info span a {
+  color: #000000;
+  text-decoration: none;
+}
+.container .info span .fa {
+  color: #EF3B3A;
+}
+body {
+  background: orange; /* fallback for old browsers */
+
+
+  font-family: "Roboto", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;      
+}
+
+/* FOOTER */
+footer{
+    background-color: #192041;
+   color: white;
+   padding: 40px 0 30px 0;
+   border-top: 10px solid rgba(221, 149, 17, 0.94);
+
+}
+
+footer i{
+    color: orange;
+    margin-right: 5px;
+}
+
+.logo__footer img{
+    width: 250px;
+}
+.footer__top{
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+}
+
+.footer__left i{
+    background-color: rgba(255, 255, 255, 0.0);
+    height: 40px;
+    width: 40px;
+    border: 1px solid rgba(218, 215, 215, 0.897);
+    font-size: 24px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 10px;
+    color: white;
+    margin: 5px 20px 20px 0;
+}
+
+.footer__left h3{
+    color: orange;
+    text-transform: uppercase;
+    font-weight: 600;
+    margin: 10px 0 px 0;
+}
+
+.footer__left p{
+   margin: 20px 0 ;
+   font-size: 12px;
+}
+
+.footer__center{
+    margin-top: 13px;
+}
+
+.footer__center h3{
+    font-weight: 600;
+    color: orange;
+    margin-bottom: 20px;
+}
+
+.footer__center__item{
+    font-size: 12px;
+    margin: 15px 0;
+}
+
+.footer__right{
+    margin-top: 60px;
+    font-size: 12px;
+    margin-left: 30px;
+}
+
+.footer__right__item{
+    margin: 10px 0;
+}
+
+.footer__bottom{
+    background-color: white;
+    color: black;
+    text-align: center;
+    padding: 15px 0;
+}
+.footer__bottom span{
+    color: #bbb;
+}
+
+.footer__detail{
+    display: flex;
+    justify-content: center;
+    background-color: rgb(19, 148, 217);
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+
+}
+
+
+.footer__fetail__item{
+    padding: 10px 10px;
+    border-radius: 5px;
+    margin: 10px 3px;
+    background-color: hsla(0,0%,100%,.2);
+}
+
+.footer__fetail__item:hover{
+    background-color: rgba(27,27,27,.2);
+}
+
+.footer__detail a{
+    text-decoration: none;
+    color: white;
+    text-transform: capitalize;
+    font-size: 14px;
+}
+
+@media (max-width:1100px){
+  .header__bottom{
+
+      padding: 0 10px;
+      justify-content: space-around;
+  }
+  .header__bottom__left ul{
+      position: fixed;
+      top: 110px;
+      right: 100%;
+      width: 100%;
+      background-color:  rgba(39,47,84,1);
+      transition: all .5s;
+  }
+
+  .header__bottom__left ul li{
+      display: block;
+      text-align: center;
+  }
+
+  .header__bottom__left ul li a{
+      color: white;
+      transition: all .5s;
+  }
+
+  .header__bottom__left ul li a:hover{
+      color: aqua;
+  }
+
+  #click:checked ~ ul{
+      right: 0;
+      z-index: 100;
+  }
+
+  .header__bottom__left i{
+      display: block;
+  }
+
+  /* THONGKE */
+  .thongKe__content{
+      display: grid;
+      grid-template-columns: repeat(4,1fr);
+
+  }
+  .thongKe__item{
+      margin: 100px 25px;
+      /* display: flex; */
+      align-items: center;
+  }
+  .thongKe__item i{
+      font-size: 30px;
+     
+  }
+  .thongKe__detail h3{
+      font-size: 16px;
+  }
+      
+   .thongKe__detail p{
+      color: #717171;
+      font-weight: 600;
+      font-size: 12px;
+  }
+
+  /* EDUCATE */
+  .educate__content{
+      display: grid;
+      grid-template-columns: repeat(3,1fr);
+      padding: 50px 20px;
+      width: 90%;
+      margin: 0 auto;
+      background-color: white;
+  }
+
+  .educate__item h3{
+      text-transform: uppercase;
+      margin: 5px 0 5px 0;
+      font-size: 14px;
+  }
+  
+  .educate__item p{
+      font-size: 10px;
+      font-weight: 400;
+      padding-right: 20px;
+      text-align: left;
+  }
+
+  .educate__detail h4{
+      margin: 10px 0 5px 5px;
+      text-transform: uppercase;
+      color: rgb(202, 145, 38);
+  }
+  
+  .educate__detail a{
+      text-decoration: none;
+      display: block;
+      margin: 5px 0 5px 10px;
+      color: white;
+      transition: all .5s;
+  }
+
+  /* INFORMATION */
+  .information{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 95%;
+      margin: 0 auto;
+      gap: 25px;
+  }
+
+  .information img{
+      width: 100%;
+  }
+
+  .information p{
+      color: #717171;
+      margin: 10px 0;
+      font-size: 13px;
+      font-weight: 400px;
+  }
+
+  .guongMatFoly__bottom__item, .tinMoi__bottom__item{
+      padding: 15px 0;
+  }
+
+  .tinMoi__bottom__item img, .guongMatFoly__bottom__item img{
+      width: 80px;
+      height: 65px;
+  }
+
+  .information h2{
+      text-transform: uppercase;
+      margin-bottom: 10px;
+      font-size: 16px;
+  }
+
+  .tuyenSinh{
+      display: none;
+  }
+
+  /* BANNER */
+  .banner2 img {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+  }
+
+  /* FOOTER */
+  .footer__top{
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      padding-left: 20px;
+      padding-right: 20px;
+  }
+
+
+  .footer__right{
+      margin-left: 0;
+      margin-top: 30px;
+      
+  }
+
+
+}
+
+
+@media (max-width:500px){
+  .thongKe__content{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+
+  }
+  .thongKe__item{
+      margin: 50px 25px;
+      /* display: flex; */
+      align-items: center;
+  }
+  .thongKe__item i{
+      font-size: 20px;
+     
+  }
+  .thongKe__detail h3{
+      font-size: 16px;
+  }
+      
+   .thongKe__detail p{
+      color: #717171;
+      font-weight: 600;
+      font-size: 10px;
+  }
+
+   /* EDUCATE */
+   .educate__content{
+      display: grid;
+      grid-template-columns: repeat(2,1fr);
+      padding: 30px 0px;
+      width: 100%;
+      margin: 0 auto;
+  }
+
+  .educate__item h3{
+      text-transform: uppercase;
+      margin: 3px 0 5px 0;
+  }
+  
+  
+  .educate__item p{
+      font-size: 9px;
+      font-weight: 400;
+      padding-right: 20px;
+      text-align: left;
+  }
+
+  .thongKe__detail h4{
+      margin: 5px 0 5px 2px;
+      font-size: 1px;
+  }
+
+  .thongKe__detail a{
+      color: #717171;
+      font-weight: 600;
+      font-size: 3px;
+      margin: 3px 0 2px 5px;
+  }
+
+  .educate__name{
+      font-size: 10px;
+      bottom: 0;
+      color: white;
+      left: 30px;
+  }
+
+  /* INFORMATION */
+  .information{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      width: 95%;
+      margin: 0 auto;
+      gap: 25px;
+  }
+
+  .information img{
+      width: 100%;
+  }
+
+  .information p{
+      color: #717171;
+      margin: 10px 0;
+      font-size: 13px;
+      font-weight: 400px;
+  }
+
+  .guongMatFoly__bottom__item, .tinMoi__bottom__item{
+      padding: 15px 0;
+  }
+
+  .tinMoi__bottom__item img, .guongMatFoly__bottom__item img{
+      width: 80px;
+      height: 65px;
+  }
+
+  .tuyenSinh{
+      display: none;
+  }
+
+  /* BANNER */
+  .banner2 img {
+      width: 100%;
+      height: 100%;
+      margin-top: 30px;
+  }
+
+  /* FOOTER */
+  .footer__top{
+      width: 100%;
+      margin: 0 auto;
+      display: grid;
+      grid-template-columns: repeat(1,1fr);
+      margin-left: 10px;
+      margin-right: 20px;
+  }
+
+  .footer__right{
+      margin-left: 0;
+      margin-top: 10px;
+      
+  }
+
+  .footer__detail{
+      display: none;
+  }
+
+}

@@ -1,0 +1,473 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="/admin/css/admin.css">
+    <link rel="stylesheet" href="/admin/css/style.css">
+
+    <!-- FONT GG -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <!-- FONT AWSOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+        integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Document</title>
+</head>
+
+<body>
+    <header>
+        <ul>
+            <input type="checkbox" id="click">
+                <label for="click" class="menu-bnt"><i class="fa fa-bars"></i></label>
+            <li>
+                <i class="fa fa-user"></i> Trần huy
+                <ul>
+                    <li>Tài khoản</li>
+                    <li>Thoát</li>
+                </ul>
+            </li>
+        </ul>
+    </header>
+    <!-- MIAN -->
+    <div class="main">
+        <div class="main__left">
+            <div class="tab__item active">Tổng quan</div>
+            <div class="tab__item">Sự kiện</div>
+            <div class="tab__item">Tuyển dụng</div>
+            <div class="tab__item">Nhập học</div>
+            <div class="tab__item">Hoạt động</div>
+            <div class="tab__item">Đào tạo</div>
+            <div class="tab__item">Nhân viên</div>
+            <div class="tab__item">Thiết lập</div>
+        </div>
+        <div class="main__center">
+            <div class="pan__item active">
+                <div class="pan__admin">
+                    <div class="admin_anh">
+                        <img src="./img/admin.jfif" alt="">
+                        <div class="anh__detail">
+                            <button>Đổi ảnh</button>
+                        </div>
+                    </div>
+                    <div class="admin__content">
+                        <div class="admin__content__tt">
+                            <p><span>Mã Nhân Viên</span> : 12522</p>
+                            <p><span>Chức vụ</span>: Quản lý</p>
+                            <p><span>Họ và tên</span>: Trần Huy</p>
+                            <p><span>Sinh nhật</span>: 10/05/1990</p>
+                        </div>
+                        <div class="admin__mk">
+                            <button>Đổi mật khẩu</button>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="pan1">
+                    <div class="pan__item1__item item1">
+                        <i class="fa fa-file-signature"></i>
+                        <p>Số đơn nhập học</p>
+                        <p>1</p>
+                    </div>
+                    <div class="pan__item1__item item2">
+                        <i class="fa fa-newspaper"></i>
+                        <p>Sự kiện sắp diễn ra</p>
+                        <p>1</p>
+                    </div>
+                    <div class="pan__item1__item item3">
+                        <h3>Đơn đăng ký nhập học mới nhất</h3>
+                        <table>
+                            <tr>
+                                <th>STT</th>
+                                <th>Mã đơn</th>
+                                <th>Họ và tên</th>
+                                <th>Ngành đăng ký học</th>
+                                <th>Thời gian</th>
+                            </tr>
+
+                            <tr>
+                                <td>1</td>
+                                <td>1737383</td>
+                                <td>Trần Văn Hùng</td>
+                                <td>Công ghệ thông tin</td>
+                                <td>15/5/2022</td>
+                            </tr>
+
+                            <tr>
+                                <td>2</td>
+                                <td>1737384</td>
+                                <td>Trần hải bảy</td>
+                                <td>Công ghệ thông tin</td>
+                                <td>10/5/2022</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pan__item">
+                <div class="pan">
+                    <div class="pan__item1 ">
+                        <h3>Nhập sự kiện</h3>
+                        <form action="">
+                            <label for="maTieuDe">
+                                <p>Mã tiêu đề</p>
+                            </label>
+                            <input type="text" id="maTieuDe">
+                            <label for="tieuDe">
+                                <p>Tiêu đề</p>
+                            </label>
+                            <input type="text" id="tieuDe">
+                            <label for="nvDang">
+                                <p>Nhân viên đăng</p>
+                            </label>
+                            <select name="" id="nvDang">
+                                <option value="0">Chọn nhân viên</option>
+                                <option value="1">Lê Minh Hiêu</option>
+                                <option value="2">Hoàng văn Hải</option>
+                                <option value="3">Võ Hoàng Hiệp</option>
+                            </select>
+                            <label for="noiDungDang">
+                                <p>Nội dung đăng</p>
+                            </label>
+                            <textarea name="" id="noiDungDang" cols="30" rows="10"></textarea>
+                        </form>
+                        <button type="button" id="btnThem" onclick="ThemSinhVien()">Thêm sinh vien</button>
+                        <button type="button" id="btnCapNhat" onclick="CapNhatSV()">Cập nhật</button>
+                        <button type="button" id="btnMoi" onclick="LamMoi()">Làm mới</button>
+                    </div>
+                    <div class="pan__item2">
+                        <h3>Danh sách tin tức</h3>
+                        <div class="timKiem">
+                            <div class="timKiem"><input type="text" placeholder="Nhập mã tin tức"></div>
+                            <button id="btcTimKiem">Tìm kiếm</button>
+                        </div>
+                        <table>
+                            <td>
+                            <th>Mã tin tức</th>
+                            <th>Tiêu đề</th>
+                            <th>Nhân viên đăng</th>
+
+                            </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pan__item ">
+                <div class="pan">
+                    <div class="pan__item1 ">
+                        <h3>Nhập tuyển dụng</h3>
+                        <form action="">
+                            <label for="ma">
+                                <p>Mã tuyển dụng</p>
+                            </label> <br>
+                            <input type="text" id="maTieuDe">
+                            <label for="tieuDe">
+                                <p>Tiêu đề</p>
+                            </label>
+                            <input type="text" id="tieuDe">
+                            <label for="nvDang">
+                                <p>Nhân viên đăng</p>
+                            </label>
+                            <select name="" id="nvDang">
+                                <option value="0">Chọn nhân viên</option>
+                                <option value="1">Lê Minh Hiêu</option>
+                                <option value="2">Hoàng văn Hải</option>
+                                <option value="3">Võ Hoàng Hiệp</option>
+                            </select>
+                            <label for="noiDungDang">
+                                <p>Nội dung tuyển dụng</p>
+                            </label>
+                            <textarea name="" id="noiDungDang" cols="30" rows="10"></textarea>
+                        </form>
+                        <button type="button" id="btnThem" onclick="ThemSinhVien()">Thêm sinh vien</button>
+                        <button type="button" id="btnCapNhat" onclick="CapNhatSV()">Cập nhật</button>
+                        <button type="button" id="btnMoi" onclick="LamMoi()">Làm mới</button>
+                    </div>
+                    <div class="pan__item2">
+                        <h3>Danh sách tin tuyển dụng</h3>
+                        <div class="timKiem">
+                            <div class="timKiem"><input type="text" placeholder="Nhập mã tuyển dụng"></div>
+                            <button id="btcTimKiem">Tìm kiếm</button>
+                        </div>
+                        <table>
+                            <td>
+                            <th>Mã tuyển dụng</th>
+                            <th>Tiêu đề</th>
+                            <th>Nhân viên đăng</th>
+
+                            </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pan__item ">
+                <div class="pan">
+                    <div class="pan__item1 ">
+                        <h3>Nhập tuyển sinh</h3>
+                        <form action="">
+                            <div>
+                                <label for="masv">
+                                    <p>Mã sinh viên</p>
+                                </label>
+                                <input type="text" id="masv">
+                                <span id="erro__masv" class="helper-text"></span>
+                                <span id="erro__masv__trung" class="helper-text"></span>
+                            </div>
+                            <div>
+                                <label for="namesv">
+                                    <p>Họ và tên</p>
+                                </label>
+                                <input type="text" id="namesv">
+                                <span id="erro__name" class="helper-text"></span>
+                            </div>
+                            <div>
+                                <label for="phonesv">
+                                    <p>Số điện thoại</p>
+                                </label>
+                                <input type="text" id="phonesv">
+                                <span id="erro__sdt" class="helper-text"></span>
+                            </div>
+                            <div>
+                                <label for="emailsv">
+                                    <p>E-mail</p>
+                                </label>
+                                <input type="text" id="emailsv">
+                                <span id="erro__mail" class="helper-text"></span>
+                            </div>
+                            <div>
+                                <label for="dresssv">
+                                    <p>quên quán</p>
+                                </label>
+                                <input type="text" id="dresssv">
+                                <span id="erro__address" class="helper-text"></span>
+                            </div>
+                            <div>
+                                <label for="nganh">
+                                    <p>Ngành</p>
+                                </label>
+                                <select name="" id="nganh">
+                                    <option value="0">Chọn ngành</option>
+                                    <option value="1">công nghệ thông tin</option>
+                                    <option value="2">quản trị kinh doanh</option>
+                                    <option value="3">ngôn ngữ nhật</option>
+                                    <option value="4">ngôn ngữ hàn</option>
+                                    <option value="5">ngôn ngữ anh</option>
+                                </select>
+                                <span id="erro__nganh" class="helper-text"></span>
+                            </div>
+                            <button type="button" id="btnThem" onclick="ThemSinhVien()">Thêm sinh vien</button>
+                            <button type="button" id="btnCapNhat" onclick="CapNhatSV()">Cập nhật</button>
+                            <button type="button" id="btnMoi" onclick="LamMoi()">Làm mới</button>
+                        </form>
+                    </div>
+                    <div class="pan__item2">
+                        <h3>Danh sách tin sinh viên</h3>
+                        <div class="timKiem">
+                            <div class="timKiem"><input type="text" id="tukhoa" placeholder="Nhập mã sinh viên"
+                                    onchange="btnTimKiem()" onkeyup="btnTimKiem()">
+                            </div>
+                            <button id="btcTimKiem" onclick="btnTimKiem()">Tìm kiếm</button>
+                        </div>
+                        <div style="float:right; margin-bottom: 10px;">
+                            <button style="background-color: green; border: 1px solid green;" onclick="setStorage()">Lưu
+                                dữ liệu</button>
+                            <button style="background-color: rgb(11, 108, 193); border: 1px solid rgb(11, 108, 193)"
+                                onclick="getStorage()">Lấy dữ liệu</button>
+                            <button style="background-color: red; border: 1px solid red" onclick="deleteSV()">Xoá Sinh
+                                viên</button>
+                        </div>
+                        <table>
+                            <thead>
+                                <tr>
+                                    <th></th>
+                                    <th>Mã sinh viên</th>
+                                    <th>Tên sinh viên</th>
+                                    <th>Quê quán</th>
+                                    <th>Số điện thoại</th>
+                                    <th>E-mail</th>
+                                    <th>Ngành đăng ký</th>
+                                </tr>
+                            </thead>
+                            <tbody id="tbodysinhvien">
+                                <tr>
+                                    <td></td>
+                                    <td>cot 1</td>
+                                    <td>cot 2</td>
+                                    <td>cot 3</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pan__item ">
+                <div class="pan">
+                    <div class="pan__item1 ">
+                        <h3>Nhập hoạt động</h3>
+                        <form action="">
+                            <label for="ma">
+                                <p>Mã hoạt động</p>
+                            </label>
+                            <input type="text" id="maTieuDe">
+                            <label for="tieuDe">
+                                <p>Tiêu đề</p>
+                            </label>
+                            <input type="text" id="tieuDe">
+                            <label for="nvDang">
+                                <p>Nhân viên đăng</p>
+                            </label>
+                            <select name="" id="nvDang">
+                                <option value="0">Chọn nhân viên</option>
+                                <option value="1">Lê Minh Hiêu</option>
+                                <option value="2">Hoàng văn Hải</option>
+                                <option value="3">Võ Hoàng Hiệp</option>
+                            </select>
+                            <label for="noiDungDang">
+                                <p>Nội dung hoạt động</p>
+                            </label>
+                            <textarea name="" id="noiDungDang" cols="30" rows="10"></textarea>
+                        </form>
+                        <button type="button" id="btnThem" onclick="ThemSinhVien()">Thêm sinh vien</button>
+                        <button type="button" id="btnCapNhat" onclick="CapNhatSV()">Cập nhật</button>
+                        <button type="button" id="btnMoi" onclick="LamMoi()">Làm mới</button>
+                    </div>
+                    <div class="pan__item2">
+                        <h3>Danh sách tin tuyển dụng</h3>
+                        <div class="timKiem">
+                            <div class="timKiem"><input type="text" placeholder="Nhập mã hoạt động"></div>
+                            <button id="btcTimKiem">Tìm kiếm</button>
+                        </div>
+                        <table>
+                            <td>
+                            <th>Mã hoạt động</th>
+                            <th>Tiêu đề</th>
+                            <th>Nhân viên đăng</th>
+
+                            </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pan__item">
+                <div class="pan">
+                    <div class="pan__item1 ">
+                        <h3>Nhập tuyển sinh</h3>
+                        <form action="">
+                            <label for="ma">
+                                <p>Mã tuyển sinh</p>
+                            </label>
+                            <input type="text" id="maTieuDe">
+                            <label for="tieuDe">
+                                <p>Tiêu đề</p>
+                            </label>
+                            <input type="text" id="tieuDe">
+                            <label for="nvDang">
+                                <p>Nhân viên đăng</p>
+                            </label>
+                            <select name="" id="nvDang">
+                                <option value="0">Chọn nhân viên</option>
+                                <option value="1">Lê Minh Hiêu</option>
+                                <option value="2">Hoàng văn Hải</option>
+                                <option value="3">Võ Hoàng Hiệp</option>
+                            </select>
+                            <label for="chuyenNganh">
+                                <p>chuyên ngành</p>
+                            </label>
+                            <input type="text" id="chuyenNganh">
+                            <label for="noiDungDang">
+                                <p>Nội dung tuyển sinh</p>
+                            </label>
+                            <textarea name="" id="noiDungDang" cols="30" rows="10"></textarea>
+                        </form>
+                        <button type="button" id="btnThem" onclick="ThemSinhVien()">Thêm sinh vien</button>
+                        <button type="button" id="btnCapNhat" onclick="CapNhatSV()">Cập nhật</button>
+                        <button type="button" id="btnMoi" onclick="LamMoi()">Làm mới</button>
+                    </div>
+                    <div class="pan__item2">
+                        <h3>Danh sách tin tuyển dụng</h3>
+                        <div class="timKiem">
+                            <div class="timKiem"><input type="text" placeholder="Nhập mã tuyển dụng"></div>
+                            <button id="btcTimKiem">Tìm kiếm</button>
+                        </div>
+                        <table>
+                            <td>
+                            <th>Mã tuyển dụng</th>
+                            <th>Tiêu đề</th>
+                            <th>Nhân viên đăng</th>
+
+                            </td>
+                        </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pan__item">
+                <div class="pan">
+                    <div class="pan__item1 ">
+                        <h3>Nhập nhân viên </h3>
+                        <form action="">
+                            <label for="ma">
+                                <p>Mã nhân viên</p>
+                            </label>
+                            <input type="text" id="ma">
+                            <label for="name">
+                                <p>Họ và tên</p>
+                            </label>
+                            <input type="text" id="name">
+                            <label for="phone">
+                                <p>Số điện thoại</p>
+                            </label>
+                            <input type="text" id="phone">
+                            <label for="email">
+                                <p>E-mail</p>
+                            </label>
+                            <input type="text" id="email">
+                            <label for="dress">
+                                <p>quên quán</p>
+                            </label>
+                            <input type="text" id="dress">
+                            <label for="ghiChu">
+                                <p>Nội dung nhân viên</p>
+                            </label>
+                            <textarea name="" id="ghiChu" cols="30" rows="10"></textarea>
+                        </form>
+                        <button type="button" id="btnThem" onclick="ThemSinhVien()">Thêm sinh vien</button>
+                        <button type="button" id="btnCapNhat" onclick="CapNhatSV()">Cập nhật</button>
+                        <button type="button" id="btnMoi" onclick="LamMoi()">Làm mới</button>
+                    </div>
+                    <div class="pan__item2">
+                        <h3>Danh sách tin nhân viên/h3>
+                            <div class="timKiem">
+                                <div class="timKiem"><input type="text" placeholder="Nhập mã sinh viên"></div>
+                                <button id="btcTimKiem">Tìm kiếm</button>
+                            </div>
+                            <table>
+                                <td>
+                                <th>Mã nhân viên</th>
+                                <th>Tên nhân viên</th>
+                                <th>Quê quán</th>
+                                <th>Số điện thoại</th>
+                                <th>E-mail</th>
+
+                                </td>
+                            </table>
+                    </div>
+                </div>
+            </div>
+            <div class="pan__item"></div>
+        </div>
+    </div>
+
+    <!-- JAVA SCRIP -->
+    <script src="/admin/js/tabSlide2.js" type="text/javascript"></script>
+    <script src="/admin/js/tuyenSinh.js " type="text/javascript"></script>
+    <script src="/admin/js/DanhSachTuyenSinh.js" type="text/javascript"></script>
+    <script src="/admin/js/validation.js" type="text/javascript"></script>
+    <script src="/admin/js/main.js" type="text/javascript"></script>
+</body>
+
+</html>
